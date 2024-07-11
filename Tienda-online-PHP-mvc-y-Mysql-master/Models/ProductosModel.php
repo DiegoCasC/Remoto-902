@@ -23,7 +23,7 @@ class ProductosModel extends Query{
         return $this->insertar($sql, $array);
     }
 
-    public function eliminar($idPro)  
+    public function eliminar($idPro) //esta función nos permite eliminar el producto mediante un query   
     {
         $sql = "UPDATE productos SET estado = ? WHERE id = ?";
         $array = array(0, $idPro);
