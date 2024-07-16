@@ -16,7 +16,7 @@ class ProductosModel extends Query{
         return $this->selectAll($sql);
     }
 
-    public function registrar($nombre, $descripcion, $precio, $cantidad, $imagen, $categoria)
+    public function registrar($nombre, $descripcion, $precio, $cantidad, $imagen, $categoria) //se registra un producto
     {
         $sql = "INSERT INTO productos (nombre, descripcion, precio, cantidad, imagen, id_categoria) VALUES (?,?,?,?,?,?)";
         $array = array($nombre, $descripcion, $precio, $cantidad, $imagen, $categoria);
