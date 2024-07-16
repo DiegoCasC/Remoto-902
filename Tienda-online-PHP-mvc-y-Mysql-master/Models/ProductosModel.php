@@ -30,7 +30,7 @@ class ProductosModel extends Query{
         return $this->save($sql, $array);
     }
 
-    public function getProducto($idPro)
+    public function getProducto($idPro) //Obtenemos el producto mediante el id asignado
     {
         $sql = "SELECT * FROM productos WHERE id = $idPro";
         return $this->select($sql);
