@@ -1,5 +1,5 @@
 <?php
-class Errors extends Controller
+class Errors extends Controller //este controlador siver para mostrar los errores que tiene
 {
     public function __construct()
     {
