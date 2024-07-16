@@ -31,7 +31,7 @@ class Productos extends Controller
         die();
     }
 
-    public function registrar()
+    public function registrar() //registra un producto
     {
         if (isset($_POST['nombre']) && isset($_POST['precio'])) {
             $nombre = $_POST['nombre'];
